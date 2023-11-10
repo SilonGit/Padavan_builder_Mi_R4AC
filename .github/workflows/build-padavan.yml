@@ -127,10 +127,11 @@ jobs:
         echo "CONFIG_FIRMWARE_ENABLE_FAT=n" >> .config #Disable Fat filesystem support
         echo "CONFIG_FIRMWARE_ENABLE_EXFAT=n" >> .config #Disable ExFat
         echo "CONFIG_FIRMWARE_INCLUDE_UVC=n" >> .config #Why use camera
-        echo "CONFIG_FIRMWARE_INCLUDE_SERIAL=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_SERIAL=n" >> .config #Disable USB-Serial modules
         echo "CONFIG_FIRMWARE_INCLUDE_AUDIO=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=n" >> .config
         echo "CONFIG_FIRMWARE_INCLUDE_ARIA=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_XUPNPD=n" >> .config #Disable IPTV
         #All custom config done
         #########################################################################################
         sudo ./clear_tree
