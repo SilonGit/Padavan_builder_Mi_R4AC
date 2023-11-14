@@ -38,7 +38,7 @@ jobs:
         if [ $KERNEL = "4.4" ] ; then
         git clone --depth=1 https://github.com/MeIsReallyBa/padavan-4.4.git /opt/rt-n56u
         else
-        git clone --depth=1 https://github.com/SilonGit/Yuos-R4AC.git /opt/rt-n56u
+        git clone --depth=1 https://github.com/SilonGit/mi-r4ac.git /opt/rt-n56u
         fi
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
@@ -47,6 +47,7 @@ jobs:
       #run: |
         #下面一行的git clone是放在上面用于替换源的，不在这里
         #git clone --depth=1 https://github.com/yuos-bit/Padavan.git /opt/rt-n56u
+        #git clone --depth=1 https://github.com/SilonGit/Yuos-R4AC.git /opt/rt-n56u
         #cd /opt/hostedtoolcache/go
         #rm -rf /opt/hostedtoolcache/go/1.14.13
         #mv 1.15.6 1.14.13
