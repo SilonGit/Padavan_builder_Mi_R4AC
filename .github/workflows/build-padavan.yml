@@ -134,6 +134,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_FTPD=n" >> .config #Diasble FTP
         echo "CONFIG_FIRMWARE_INCLUDE_SFTP=n" >> .config #Disable sFTP
         echo "CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW=n" >> .config #这个也没有用，精简了
+        echo "CONFIG_FIRMWARE_INCLUDE_VLMCSD=n" >> .config #KMS Activation Disabled
         #All custom config done
         #########################################################################################
         sudo ./clear_tree
